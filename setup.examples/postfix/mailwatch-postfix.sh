@@ -5,7 +5,7 @@ Webuser="$1"
 
 service postfix stop
 
-cp "$DIR/etc/MailScanner/conf.d/mailwatch.conf" /etc/MailScanner/conf.d/mailwatch.conf
+cp "$DIR/etc/MailScanner/conf.d/00mailwatch.conf" /etc/MailScanner/conf.d/00mailwatch.conf
 cp "$DIR/etc/postfix/header_checks" /etc/postfix/header_checks
 echo "header_checks = regexp:/etc/postfix/header_checks" >> /etc/postfix/main.cf
 

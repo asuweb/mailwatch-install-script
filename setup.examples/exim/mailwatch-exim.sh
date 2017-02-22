@@ -38,7 +38,7 @@ else
 fi
 
 // Copy MailScanner configuration
-cp "$DIR/etc/MailScanner/conf.d/mailwatch.conf" /etc/MailScanner/conf.d/mailwatch.conf
+cp "$DIR/etc/MailScanner/conf.d/00mailwatch.conf" /etc/MailScanner/conf.d/00mailwatch.conf
 
 // Adjust rights for Exim
 usermod -a -G "$EximGroup" clamav
